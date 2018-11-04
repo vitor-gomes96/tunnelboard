@@ -1,0 +1,494 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/debug\TunnelBoard.X.debug.obj
+cinit CODE 0 99E 99E 3A 1
+text0 CODE 0 A06 A06 2C 1
+text1 CODE 0 A52 A52 C 1
+text2 CODE 0 848 848 94 1
+text3 CODE 0 9D8 9D8 2E 1
+text4 CODE 0 948 948 56 1
+text5 CODE 0 8DC 8DC 6C 1
+text6 CODE 0 A32 A32 20 1
+idataCOMRAM CODE 0 A5E A5E 4 1
+cstackCOMRAM COMRAM 1 51 51 B 1
+smallconst SMALLCONST 0 800 800 48 1
+dataCOMRAM COMRAM 1 5C 5C 4 1
+bssCOMRAM COMRAM 1 1 1 50 1
+$C:\Users\AVELLB~1\AppData\Local\Temp\sj2c.obj
+idloc IDLOC 0 200000 200000 8 1
+init CODE 0 2 2 4 1
+reset_vec CODE 0 0 0 2 1
+config CONFIG 0 300000 300000 E 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 60-3EE 1
+RAM 400-7FF 1
+SFR F60-F9B 1
+SFR F9D-FD3 1
+SFR FD5-FDA 1
+SFR FE0-FE2 1
+SFR FE8-FEA 1
+SFR FF0-FFB 1
+BANK0 60-FF 1
+BANK1 100-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3EE 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+CONST 6-7FF 1
+CONST A62-7CFF 1
+STACK 400-7FF 1
+SMALLCONST A62-7CFF 1
+CODE 6-7FF 1
+CODE A62-7CFF 1
+BIGRAM 60-3EE 1
+BIGRAM 400-7FF 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST A62-7CFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/debug\TunnelBoard.X.debug.obj
+A32 text6 CODE >244:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+A32 text6 CODE >245:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+A34 text6 CODE >246:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+A3C text6 CODE >247:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+A3E text6 CODE >248:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+A46 text6 CODE >249:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+A48 text6 CODE >250:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+A50 text6 CODE >251:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+8DC text5 CODE >253:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+8DE text5 CODE >254:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+8E0 text5 CODE >255:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+8E2 text5 CODE >256:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+8EA text5 CODE >257:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+8F4 text5 CODE >258:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+8FE text5 CODE >259:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+908 text5 CODE >260:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+912 text5 CODE >261:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+91C text5 CODE >262:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+926 text5 CODE >263:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+930 text5 CODE >264:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+93A text5 CODE >265:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+942 text5 CODE >266:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+946 text5 CODE >267:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+948 text4 CODE >321:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+948 text4 CODE >322:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+96A text4 CODE >323:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+98C text4 CODE >324:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+98E text4 CODE >325:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+990 text4 CODE >326:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+992 text4 CODE >327:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+994 text4 CODE >328:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+996 text4 CODE >329:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+998 text4 CODE >330:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+99A text4 CODE >331:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+99C text4 CODE >332:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+9D8 text3 CODE >164:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+9D8 text3 CODE >166:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+9DA text3 CODE >167:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+9DC text3 CODE >168:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+9DE text3 CODE >170:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+9E0 text3 CODE >171:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+9E2 text3 CODE >172:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+9E4 text3 CODE >173:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+9E6 text3 CODE >174:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+9E8 text3 CODE >175:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+9EA text3 CODE >176:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+9EC text3 CODE >177:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+9EE text3 CODE >179:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+9F0 text3 CODE >180:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+9F2 text3 CODE >181:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+9F4 text3 CODE >182:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+9F6 text3 CODE >183:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+9F8 text3 CODE >184:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+9FA text3 CODE >185:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+9FC text3 CODE >186:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+9FE text3 CODE >187:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+A00 text3 CODE >188:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+A02 text3 CODE >189:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+A04 text3 CODE >190:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+848 text2 CODE >269:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+848 text2 CODE >270:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+84A text2 CODE >271:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+84C text2 CODE >272:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+85C text2 CODE >273:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+87E text2 CODE >274:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+8A0 text2 CODE >275:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+8C2 text2 CODE >276:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+8C4 text2 CODE >277:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+8C6 text2 CODE >278:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+8C8 text2 CODE >279:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+8CA text2 CODE >280:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+8CC text2 CODE >281:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+8CE text2 CODE >282:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+8D0 text2 CODE >283:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+8D2 text2 CODE >284:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+8DA text2 CODE >285:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+A52 text1 CODE >156:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+A52 text1 CODE >157:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+A54 text1 CODE >158:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+A56 text1 CODE >159:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+A58 text1 CODE >160:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+A5A text1 CODE >161:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+A5C text1 CODE >162:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+A06 text0 CODE >393:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+A06 text0 CODE >395:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+A0A text0 CODE >396:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+A0E text0 CODE >399:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+A12 text0 CODE >401:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+A14 text0 CODE >406:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+A2A text0 CODE >407:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+A2E text0 CODE >412:C:\Users\Avell B155 MAX\MPLABXProjects\TunnelBoard.X\main.c
+99E cinit CODE >576:C:\Users\AVELLB~1\AppData\Local\Temp\sj2c.
+99E cinit CODE >578:C:\Users\AVELLB~1\AppData\Local\Temp\sj2c.
+99E cinit CODE >581:C:\Users\AVELLB~1\AppData\Local\Temp\sj2c.
+99E cinit CODE >651:C:\Users\AVELLB~1\AppData\Local\Temp\sj2c.
+9A0 cinit CODE >652:C:\Users\AVELLB~1\AppData\Local\Temp\sj2c.
+9A2 cinit CODE >653:C:\Users\AVELLB~1\AppData\Local\Temp\sj2c.
+9A4 cinit CODE >654:C:\Users\AVELLB~1\AppData\Local\Temp\sj2c.
+9A6 cinit CODE >655:C:\Users\AVELLB~1\AppData\Local\Temp\sj2c.
+9A8 cinit CODE >656:C:\Users\AVELLB~1\AppData\Local\Temp\sj2c.
+9AA cinit CODE >657:C:\Users\AVELLB~1\AppData\Local\Temp\sj2c.
+9AE cinit CODE >658:C:\Users\AVELLB~1\AppData\Local\Temp\sj2c.
+9B2 cinit CODE >659:C:\Users\AVELLB~1\AppData\Local\Temp\sj2c.
+9B2 cinit CODE >660:C:\Users\AVELLB~1\AppData\Local\Temp\sj2c.
+9B4 cinit CODE >661:C:\Users\AVELLB~1\AppData\Local\Temp\sj2c.
+9B8 cinit CODE >662:C:\Users\AVELLB~1\AppData\Local\Temp\sj2c.
+9BA cinit CODE >663:C:\Users\AVELLB~1\AppData\Local\Temp\sj2c.
+9BC cinit CODE >664:C:\Users\AVELLB~1\AppData\Local\Temp\sj2c.
+9BE cinit CODE >668:C:\Users\AVELLB~1\AppData\Local\Temp\sj2c.
+9C2 cinit CODE >669:C:\Users\AVELLB~1\AppData\Local\Temp\sj2c.
+9C4 cinit CODE >670:C:\Users\AVELLB~1\AppData\Local\Temp\sj2c.
+9C4 cinit CODE >671:C:\Users\AVELLB~1\AppData\Local\Temp\sj2c.
+9C6 cinit CODE >672:C:\Users\AVELLB~1\AppData\Local\Temp\sj2c.
+9C8 cinit CODE >673:C:\Users\AVELLB~1\AppData\Local\Temp\sj2c.
+9CA cinit CODE >679:C:\Users\AVELLB~1\AppData\Local\Temp\sj2c.
+9CA cinit CODE >682:C:\Users\AVELLB~1\AppData\Local\Temp\sj2c.
+9CC cinit CODE >683:C:\Users\AVELLB~1\AppData\Local\Temp\sj2c.
+9CE cinit CODE >684:C:\Users\AVELLB~1\AppData\Local\Temp\sj2c.
+9D0 cinit CODE >685:C:\Users\AVELLB~1\AppData\Local\Temp\sj2c.
+9D2 cinit CODE >686:C:\Users\AVELLB~1\AppData\Local\Temp\sj2c.
+9D4 cinit CODE >687:C:\Users\AVELLB~1\AppData\Local\Temp\sj2c.
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/debug\TunnelBoard.X.debug.obj
+__Hspace_0 30000E 0 ABS 0 - dist/default/debug\TunnelBoard.X.debug.obj
+__Hspace_1 60 0 ABS 0 - dist/default/debug\TunnelBoard.X.debug.obj
+__Hspace_2 0 0 ABS 0 - dist/default/debug\TunnelBoard.X.debug.obj
+_velocidade_med 35 0 COMRAM 1 bssCOMRAM dist/default/debug\TunnelBoard.X.debug.obj
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/debug\TunnelBoard.X.debug.obj
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\AVELLB~1\AppData\Local\Temp\sj2c.obj
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/debug\TunnelBoard.X.debug.obj
+__Lsmallconst 800 0 SMALLCONST 0 smallconst dist/default/debug\TunnelBoard.X.debug.obj
+_PIE1 F9D 0 ABS 0 - dist/default/debug\TunnelBoard.X.debug.obj
+_PIE2 FA0 0 ABS 0 - dist/default/debug\TunnelBoard.X.debug.obj
+___sp 0 0 STACK 2 stack C:\Users\AVELLB~1\AppData\Local\Temp\sj2c.obj
+_main A06 0 CODE 0 text0 dist/default/debug\TunnelBoard.X.debug.obj
+start 2 0 CODE 0 init C:\Users\AVELLB~1\AppData\Local\Temp\sj2c.obj
+__size_of_main 0 0 ABS 0 - dist/default/debug\TunnelBoard.X.debug.obj
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/debug\TunnelBoard.X.debug.obj
+__size_of_config_lcd 0 0 ABS 0 - dist/default/debug\TunnelBoard.X.debug.obj
+__size_of_config_osc 0 0 ABS 0 - dist/default/debug\TunnelBoard.X.debug.obj
+__Hpowerup 2 0 CODE 0 powerup dist/default/debug\TunnelBoard.X.debug.obj
+_time_data 1 0 COMRAM 1 bssCOMRAM dist/default/debug\TunnelBoard.X.debug.obj
+_T0CONbits FD5 0 ABS 0 - dist/default/debug\TunnelBoard.X.debug.obj
+__HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/debug\TunnelBoard.X.debug.obj
+__accesstop 60 0 ABS 0 - C:\Users\AVELLB~1\AppData\Local\Temp\sj2c.obj
+intlevel0 0 0 CODE 0 text C:\Users\AVELLB~1\AppData\Local\Temp\sj2c.obj
+intlevel1 0 0 CODE 0 text C:\Users\AVELLB~1\AppData\Local\Temp\sj2c.obj
+intlevel2 0 0 CODE 0 text C:\Users\AVELLB~1\AppData\Local\Temp\sj2c.obj
+intlevel3 0 0 CODE 0 text C:\Users\AVELLB~1\AppData\Local\Temp\sj2c.obj
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/debug\TunnelBoard.X.debug.obj
+_OSCCONbits FD3 0 ABS 0 - dist/default/debug\TunnelBoard.X.debug.obj
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/debug\TunnelBoard.X.debug.obj
+_teste_long 41 0 COMRAM 1 bssCOMRAM dist/default/debug\TunnelBoard.X.debug.obj
+__Hifardata 0 0 CODE 0 ifardata dist/default/debug\TunnelBoard.X.debug.obj
+__Hclrtext 0 0 ABS 0 clrtext dist/default/debug\TunnelBoard.X.debug.obj
+__end_of_config_io A06 0 CODE 0 text3 dist/default/debug\TunnelBoard.X.debug.obj
+__pidataCOMRAM A5E 0 CODE 0 idataCOMRAM dist/default/debug\TunnelBoard.X.debug.obj
+__size_of_config_io 0 0 ABS 0 - dist/default/debug\TunnelBoard.X.debug.obj
+___inthi_sp 0 0 STACK 2 stack C:\Users\AVELLB~1\AppData\Local\Temp\sj2c.obj
+___intlo_sp 0 0 STACK 2 stack C:\Users\AVELLB~1\AppData\Local\Temp\sj2c.obj
+__LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/debug\TunnelBoard.X.debug.obj
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/debug\TunnelBoard.X.debug.obj
+_fti1_flag 4F 0 COMRAM 1 bssCOMRAM dist/default/debug\TunnelBoard.X.debug.obj
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/debug\TunnelBoard.X.debug.obj
+_fti2_flag 4D 0 COMRAM 1 bssCOMRAM dist/default/debug\TunnelBoard.X.debug.obj
+_config_io 9D8 0 CODE 0 text3 dist/default/debug\TunnelBoard.X.debug.obj
+_fti3_flag 4B 0 COMRAM 1 bssCOMRAM dist/default/debug\TunnelBoard.X.debug.obj
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/debug\TunnelBoard.X.debug.obj
+__Hintcodelo 2 0 CODE 0 intcodelo dist/default/debug\TunnelBoard.X.debug.obj
+_fti4_flag 49 0 COMRAM 1 bssCOMRAM dist/default/debug\TunnelBoard.X.debug.obj
+__CFG_CCP2MX$OFF 0 0 ABS 0 - dist/default/debug\TunnelBoard.X.debug.obj
+__LidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/debug\TunnelBoard.X.debug.obj
+__size_of_pulse 0 0 ABS 0 - dist/default/debug\TunnelBoard.X.debug.obj
+_INTCON2bits FF1 0 ABS 0 - dist/default/debug\TunnelBoard.X.debug.obj
+_INTCON3bits FF0 0 ABS 0 - dist/default/debug\TunnelBoard.X.debug.obj
+__Lintcodelo 2 0 CODE 0 intcodelo dist/default/debug\TunnelBoard.X.debug.obj
+__CFG_FCMEN$OFF 0 0 ABS 0 - dist/default/debug\TunnelBoard.X.debug.obj
+__CFG_MCLRE$OFF 0 0 ABS 0 - dist/default/debug\TunnelBoard.X.debug.obj
+start_initialization 99E 0 CODE 0 cinit dist/default/debug\TunnelBoard.X.debug.obj
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/debug\TunnelBoard.X.debug.obj
+_TRISAbits F92 0 ABS 0 - dist/default/debug\TunnelBoard.X.debug.obj
+_TRISCbits F94 0 ABS 0 - dist/default/debug\TunnelBoard.X.debug.obj
+_TRISEbits F96 0 ABS 0 - dist/default/debug\TunnelBoard.X.debug.obj
+___rparam_used 1 0 ABS 0 - dist/default/debug\TunnelBoard.X.debug.obj
+_IPR1bits F9F 0 ABS 0 - dist/default/debug\TunnelBoard.X.debug.obj
+_IPR2bits FA2 0 ABS 0 - dist/default/debug\TunnelBoard.X.debug.obj
+__Hbank0 0 0 ABS 0 bank0 dist/default/debug\TunnelBoard.X.debug.obj
+__Hbank1 0 0 ABS 0 bank1 dist/default/debug\TunnelBoard.X.debug.obj
+__Hbank2 0 0 ABS 0 bank2 dist/default/debug\TunnelBoard.X.debug.obj
+__Hbank3 0 0 ABS 0 bank3 dist/default/debug\TunnelBoard.X.debug.obj
+__Hbank4 0 0 ABS 0 bank4 dist/default/debug\TunnelBoard.X.debug.obj
+__Hbank5 0 0 ABS 0 bank5 dist/default/debug\TunnelBoard.X.debug.obj
+__Hbank6 0 0 ABS 0 bank6 dist/default/debug\TunnelBoard.X.debug.obj
+__Hbank7 0 0 ABS 0 bank7 dist/default/debug\TunnelBoard.X.debug.obj
+__Hcinit 0 0 ABS 0 cinit dist/default/debug\TunnelBoard.X.debug.obj
+__Hconst 0 0 CONST 0 const dist/default/debug\TunnelBoard.X.debug.obj
+__Hidata 0 0 CODE 0 idata dist/default/debug\TunnelBoard.X.debug.obj
+__Hidloc 200008 0 IDLOC 0 idloc dist/default/debug\TunnelBoard.X.debug.obj
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/debug\TunnelBoard.X.debug.obj
+__Hparam 0 0 COMRAM 1 rparam dist/default/debug\TunnelBoard.X.debug.obj
+__Hrdata 0 0 COMRAM 1 rdata dist/default/debug\TunnelBoard.X.debug.obj
+__Hstack 0 0 STACK 2 stack dist/default/debug\TunnelBoard.X.debug.obj
+__Htext0 0 0 ABS 0 text0 dist/default/debug\TunnelBoard.X.debug.obj
+__Htext1 0 0 ABS 0 text1 dist/default/debug\TunnelBoard.X.debug.obj
+__Htext2 0 0 ABS 0 text2 dist/default/debug\TunnelBoard.X.debug.obj
+__Htext3 0 0 ABS 0 text3 dist/default/debug\TunnelBoard.X.debug.obj
+__Htext4 0 0 ABS 0 text4 dist/default/debug\TunnelBoard.X.debug.obj
+__Htext5 0 0 ABS 0 text5 dist/default/debug\TunnelBoard.X.debug.obj
+__Htext6 0 0 ABS 0 text6 dist/default/debug\TunnelBoard.X.debug.obj
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/debug\TunnelBoard.X.debug.obj
+__Hbigram 0 0 ABS 0 bigram dist/default/debug\TunnelBoard.X.debug.obj
+__smallconst 800 0 SMALLCONST 0 smallconst C:\Users\AVELLB~1\AppData\Local\Temp\sj2c.obj
+__Hcomram 0 0 ABS 0 comram dist/default/debug\TunnelBoard.X.debug.obj
+__Hconfig 30000E 0 CONFIG 0 config dist/default/debug\TunnelBoard.X.debug.obj
+__Lbank0 0 0 ABS 0 bank0 dist/default/debug\TunnelBoard.X.debug.obj
+__Lbank1 0 0 ABS 0 bank1 dist/default/debug\TunnelBoard.X.debug.obj
+__Lbank2 0 0 ABS 0 bank2 dist/default/debug\TunnelBoard.X.debug.obj
+__Lbank3 0 0 ABS 0 bank3 dist/default/debug\TunnelBoard.X.debug.obj
+__Lbank4 0 0 ABS 0 bank4 dist/default/debug\TunnelBoard.X.debug.obj
+__Lbank5 0 0 ABS 0 bank5 dist/default/debug\TunnelBoard.X.debug.obj
+__Lbank6 0 0 ABS 0 bank6 dist/default/debug\TunnelBoard.X.debug.obj
+__Lbank7 0 0 ABS 0 bank7 dist/default/debug\TunnelBoard.X.debug.obj
+__Lcinit 0 0 ABS 0 cinit dist/default/debug\TunnelBoard.X.debug.obj
+__Lconst 0 0 CONST 0 const dist/default/debug\TunnelBoard.X.debug.obj
+__Lidata 0 0 CODE 0 idata dist/default/debug\TunnelBoard.X.debug.obj
+__Lidloc 200000 0 IDLOC 0 idloc dist/default/debug\TunnelBoard.X.debug.obj
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/debug\TunnelBoard.X.debug.obj
+__Lparam 0 0 COMRAM 1 rparam dist/default/debug\TunnelBoard.X.debug.obj
+__Lrdata 0 0 COMRAM 1 rdata dist/default/debug\TunnelBoard.X.debug.obj
+__Lstack 0 0 STACK 2 stack dist/default/debug\TunnelBoard.X.debug.obj
+__Ltext0 0 0 ABS 0 text0 dist/default/debug\TunnelBoard.X.debug.obj
+__Ltext1 0 0 ABS 0 text1 dist/default/debug\TunnelBoard.X.debug.obj
+__Ltext2 0 0 ABS 0 text2 dist/default/debug\TunnelBoard.X.debug.obj
+__Ltext3 0 0 ABS 0 text3 dist/default/debug\TunnelBoard.X.debug.obj
+__Ltext4 0 0 ABS 0 text4 dist/default/debug\TunnelBoard.X.debug.obj
+__Ltext5 0 0 ABS 0 text5 dist/default/debug\TunnelBoard.X.debug.obj
+__Ltext6 0 0 ABS 0 text6 dist/default/debug\TunnelBoard.X.debug.obj
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/debug\TunnelBoard.X.debug.obj
+_vel_data 11 0 COMRAM 1 bssCOMRAM dist/default/debug\TunnelBoard.X.debug.obj
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/debug\TunnelBoard.X.debug.obj
+_INTCONbits FF2 0 ABS 0 - dist/default/debug\TunnelBoard.X.debug.obj
+__Habs1 0 0 ABS 0 abs1 dist/default/debug\TunnelBoard.X.debug.obj
+__Hdata 0 0 ABS 0 data dist/default/debug\TunnelBoard.X.debug.obj
+__Hinit 6 0 CODE 0 init dist/default/debug\TunnelBoard.X.debug.obj
+__Hrbit 0 0 COMRAM 1 rbit dist/default/debug\TunnelBoard.X.debug.obj
+__Hrbss 0 0 COMRAM 1 rbss dist/default/debug\TunnelBoard.X.debug.obj
+__Htemp 0 0 COMRAM 1 temp dist/default/debug\TunnelBoard.X.debug.obj
+__Htext 0 0 ABS 0 text dist/default/debug\TunnelBoard.X.debug.obj
+__Labs1 0 0 ABS 0 abs1 dist/default/debug\TunnelBoard.X.debug.obj
+__Ldata 0 0 ABS 0 data dist/default/debug\TunnelBoard.X.debug.obj
+__Linit 2 0 CODE 0 init dist/default/debug\TunnelBoard.X.debug.obj
+__Lrbit 0 0 COMRAM 1 rbit dist/default/debug\TunnelBoard.X.debug.obj
+__Lrbss 0 0 COMRAM 1 rbss dist/default/debug\TunnelBoard.X.debug.obj
+__Ltemp 0 0 COMRAM 1 temp dist/default/debug\TunnelBoard.X.debug.obj
+__Ltext 0 0 ABS 0 text dist/default/debug\TunnelBoard.X.debug.obj
+_cont_global 39 0 COMRAM 1 bssCOMRAM dist/default/debug\TunnelBoard.X.debug.obj
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/debug\TunnelBoard.X.debug.obj
+__Hintret 0 0 ABS 0 intret dist/default/debug\TunnelBoard.X.debug.obj
+__Hirdata 0 0 CODE 0 irdata dist/default/debug\TunnelBoard.X.debug.obj
+__S0 30000E 0 ABS 0 - dist/default/debug\TunnelBoard.X.debug.obj
+__S1 60 0 ABS 0 - dist/default/debug\TunnelBoard.X.debug.obj
+__S2 0 0 ABS 0 - dist/default/debug\TunnelBoard.X.debug.obj
+__CFG_VREGEN$OFF 0 0 ABS 0 - dist/default/debug\TunnelBoard.X.debug.obj
+__CFG_PLLDIV$1 0 0 ABS 0 - dist/default/debug\TunnelBoard.X.debug.obj
+__CFG_PBADEN$OFF 0 0 ABS 0 - dist/default/debug\TunnelBoard.X.debug.obj
+__HidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/debug\TunnelBoard.X.debug.obj
+_error_flag 47 0 COMRAM 1 bssCOMRAM dist/default/debug\TunnelBoard.X.debug.obj
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/debug\TunnelBoard.X.debug.obj
+_tempo_med 2D 0 COMRAM 1 bssCOMRAM dist/default/debug\TunnelBoard.X.debug.obj
+_tempo_tot 31 0 COMRAM 1 bssCOMRAM dist/default/debug\TunnelBoard.X.debug.obj
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/debug\TunnelBoard.X.debug.obj
+__Lintentry 0 0 ABS 0 intentry dist/default/debug\TunnelBoard.X.debug.obj
+__Hramtop 800 0 RAM 0 ramtop dist/default/debug\TunnelBoard.X.debug.obj
+__Hrparam 0 0 COMRAM 1 rparam dist/default/debug\TunnelBoard.X.debug.obj
+__activetblptr 1 0 ABS 0 - dist/default/debug\TunnelBoard.X.debug.obj
+__Hstruct 0 0 COMRAM 1 struct dist/default/debug\TunnelBoard.X.debug.obj
+_aceleracao_med 29 0 COMRAM 1 bssCOMRAM dist/default/debug\TunnelBoard.X.debug.obj
+set_inst@a 58 0 COMRAM 1 cstackCOMRAM dist/default/debug\TunnelBoard.X.debug.obj
+set_inst@b 51 0 COMRAM 1 cstackCOMRAM dist/default/debug\TunnelBoard.X.debug.obj
+set_inst@c 52 0 COMRAM 1 cstackCOMRAM dist/default/debug\TunnelBoard.X.debug.obj
+set_inst@d 53 0 COMRAM 1 cstackCOMRAM dist/default/debug\TunnelBoard.X.debug.obj
+set_inst@e 54 0 COMRAM 1 cstackCOMRAM dist/default/debug\TunnelBoard.X.debug.obj
+set_inst@f 55 0 COMRAM 1 cstackCOMRAM dist/default/debug\TunnelBoard.X.debug.obj
+set_inst@g 56 0 COMRAM 1 cstackCOMRAM dist/default/debug\TunnelBoard.X.debug.obj
+set_inst@h 57 0 COMRAM 1 cstackCOMRAM dist/default/debug\TunnelBoard.X.debug.obj
+_acel_data 1D 0 COMRAM 1 bssCOMRAM dist/default/debug\TunnelBoard.X.debug.obj
+_PIE1bits F9D 0 ABS 0 - dist/default/debug\TunnelBoard.X.debug.obj
+_PIE2bits FA0 0 ABS 0 - dist/default/debug\TunnelBoard.X.debug.obj
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/debug\TunnelBoard.X.debug.obj
+__Lbigram 0 0 ABS 0 bigram dist/default/debug\TunnelBoard.X.debug.obj
+__CFG_BOR$OFF 0 0 ABS 0 - dist/default/debug\TunnelBoard.X.debug.obj
+__Lcomram 0 0 ABS 0 comram dist/default/debug\TunnelBoard.X.debug.obj
+__Lconfig 300000 0 CONFIG 0 config dist/default/debug\TunnelBoard.X.debug.obj
+__size_of_set_inst 0 0 ABS 0 - dist/default/debug\TunnelBoard.X.debug.obj
+__CFG_IESO$ON 0 0 ABS 0 - dist/default/debug\TunnelBoard.X.debug.obj
+_LATAbits F89 0 ABS 0 - dist/default/debug\TunnelBoard.X.debug.obj
+_LATCbits F8B 0 ABS 0 - dist/default/debug\TunnelBoard.X.debug.obj
+_LATEbits F8D 0 ABS 0 - dist/default/debug\TunnelBoard.X.debug.obj
+_config_lcd 848 0 CODE 0 text2 dist/default/debug\TunnelBoard.X.debug.obj
+_config_osc A52 0 CODE 0 text1 dist/default/debug\TunnelBoard.X.debug.obj
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/debug\TunnelBoard.X.debug.obj
+__end_of_clear_scr 99E 0 CODE 0 text4 dist/default/debug\TunnelBoard.X.debug.obj
+__Lfardata 0 0 FARRAM 0 fardata dist/default/debug\TunnelBoard.X.debug.obj
+__size_of_clear_scr 0 0 ABS 0 - dist/default/debug\TunnelBoard.X.debug.obj
+stackhi 7FF 0 ABS 0 - C:\Users\AVELLB~1\AppData\Local\Temp\sj2c.obj
+stacklo 400 0 ABS 0 - C:\Users\AVELLB~1\AppData\Local\Temp\sj2c.obj
+__Lintcode 2 0 CODE 0 intcode dist/default/debug\TunnelBoard.X.debug.obj
+__Lintret 0 0 ABS 0 intret dist/default/debug\TunnelBoard.X.debug.obj
+__Lirdata 0 0 CODE 0 irdata dist/default/debug\TunnelBoard.X.debug.obj
+__CFG_LVP$OFF 0 0 ABS 0 - dist/default/debug\TunnelBoard.X.debug.obj
+__Lspace_0 0 0 ABS 0 - dist/default/debug\TunnelBoard.X.debug.obj
+__Lspace_1 0 0 ABS 0 - dist/default/debug\TunnelBoard.X.debug.obj
+__Lspace_2 0 0 ABS 0 - dist/default/debug\TunnelBoard.X.debug.obj
+__pbssCOMRAM 1 0 COMRAM 1 bssCOMRAM dist/default/debug\TunnelBoard.X.debug.obj
+clear_data@cont_aux 25 0 COMRAM 1 bssCOMRAM dist/default/debug\TunnelBoard.X.debug.obj
+_clear_scr 948 0 CODE 0 text4 dist/default/debug\TunnelBoard.X.debug.obj
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/debug\TunnelBoard.X.debug.obj
+__CFG_FOSC$INTOSC_EC 0 0 ABS 0 - dist/default/debug\TunnelBoard.X.debug.obj
+end_of_initialization 9CA 0 CODE 0 cinit dist/default/debug\TunnelBoard.X.debug.obj
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/debug\TunnelBoard.X.debug.obj
+__Hintentry 0 0 ABS 0 intentry dist/default/debug\TunnelBoard.X.debug.obj
+__CFG_STVREN$ON 0 0 ABS 0 - dist/default/debug\TunnelBoard.X.debug.obj
+_RCONbits FD0 0 ABS 0 - dist/default/debug\TunnelBoard.X.debug.obj
+__Hreset_vec 2 0 CODE 0 reset_vec dist/default/debug\TunnelBoard.X.debug.obj
+_set_inst 8DC 0 CODE 0 text5 dist/default/debug\TunnelBoard.X.debug.obj
+__Lramtop 800 0 RAM 0 ramtop dist/default/debug\TunnelBoard.X.debug.obj
+__Lrparam 0 0 COMRAM 1 rparam dist/default/debug\TunnelBoard.X.debug.obj
+__pcinit 99E 0 CODE 0 cinit dist/default/debug\TunnelBoard.X.debug.obj
+__ptext0 A06 0 CODE 0 text0 dist/default/debug\TunnelBoard.X.debug.obj
+__ptext1 A52 0 CODE 0 text1 dist/default/debug\TunnelBoard.X.debug.obj
+__ptext2 848 0 CODE 0 text2 dist/default/debug\TunnelBoard.X.debug.obj
+__ptext3 9D8 0 CODE 0 text3 dist/default/debug\TunnelBoard.X.debug.obj
+__ptext4 948 0 CODE 0 text4 dist/default/debug\TunnelBoard.X.debug.obj
+__ptext5 8DC 0 CODE 0 text5 dist/default/debug\TunnelBoard.X.debug.obj
+__ptext6 A32 0 CODE 0 text6 dist/default/debug\TunnelBoard.X.debug.obj
+__Lstruct 0 0 COMRAM 1 struct dist/default/debug\TunnelBoard.X.debug.obj
+__end_of_config_lcd 8DC 0 CODE 0 text2 dist/default/debug\TunnelBoard.X.debug.obj
+__end_of_config_osc A5E 0 CODE 0 text1 dist/default/debug\TunnelBoard.X.debug.obj
+__end_of_set_inst 948 0 CODE 0 text5 dist/default/debug\TunnelBoard.X.debug.obj
+__ramtop 800 0 RAM 0 ramtop C:\Users\AVELLB~1\AppData\Local\Temp\sj2c.obj
+__Lpowerup 2 0 CODE 0 powerup dist/default/debug\TunnelBoard.X.debug.obj
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/debug\TunnelBoard.X.debug.obj
+__psmallconst 800 0 SMALLCONST 0 smallconst dist/default/debug\TunnelBoard.X.debug.obj
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/debug\TunnelBoard.X.debug.obj
+_time_aux 3D 0 COMRAM 1 bssCOMRAM dist/default/debug\TunnelBoard.X.debug.obj
+___param_bank 0 0 ABS 0 - dist/default/debug\TunnelBoard.X.debug.obj
+__CFG_WDT$OFF 0 0 ABS 0 - dist/default/debug\TunnelBoard.X.debug.obj
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/debug\TunnelBoard.X.debug.obj
+__end_of__initialization 9CA 0 CODE 0 cinit dist/default/debug\TunnelBoard.X.debug.obj
+__Libigdata 0 0 CODE 0 ibigdata dist/default/debug\TunnelBoard.X.debug.obj
+__Lclrtext 0 0 ABS 0 clrtext dist/default/debug\TunnelBoard.X.debug.obj
+__CFG_PWRT$OFF 0 0 ABS 0 - dist/default/debug\TunnelBoard.X.debug.obj
+__pcstackCOMRAM 51 0 COMRAM 1 cstackCOMRAM dist/default/debug\TunnelBoard.X.debug.obj
+__end_of_main A32 0 CODE 0 text0 dist/default/debug\TunnelBoard.X.debug.obj
+_TMR0H FD7 0 ABS 0 - dist/default/debug\TunnelBoard.X.debug.obj
+_TMR0L FD6 0 ABS 0 - dist/default/debug\TunnelBoard.X.debug.obj
+__end_of_pulse A52 0 CODE 0 text6 dist/default/debug\TunnelBoard.X.debug.obj
+__HRAM 0 0 ABS 0 - dist/default/debug\TunnelBoard.X.debug.obj
+__Hbss 0 0 RAM 1 bss dist/default/debug\TunnelBoard.X.debug.obj
+__Hram 0 0 ABS 0 ram dist/default/debug\TunnelBoard.X.debug.obj
+__Hsfr 0 0 ABS 0 sfr dist/default/debug\TunnelBoard.X.debug.obj
+__LRAM 1 0 ABS 0 - dist/default/debug\TunnelBoard.X.debug.obj
+__Lbss 0 0 RAM 1 bss dist/default/debug\TunnelBoard.X.debug.obj
+__Lram 0 0 ABS 0 ram dist/default/debug\TunnelBoard.X.debug.obj
+__Lsfr 0 0 ABS 0 sfr dist/default/debug\TunnelBoard.X.debug.obj
+_pulse A32 0 CODE 0 text6 dist/default/debug\TunnelBoard.X.debug.obj
+__initialization 99E 0 CODE 0 cinit dist/default/debug\TunnelBoard.X.debug.obj
+__pdataCOMRAM 5C 0 COMRAM 1 dataCOMRAM dist/default/debug\TunnelBoard.X.debug.obj
+_comp_ft 5C 0 COMRAM 1 dataCOMRAM dist/default/debug\TunnelBoard.X.debug.obj
+_cont_ft 45 0 COMRAM 1 bssCOMRAM dist/default/debug\TunnelBoard.X.debug.obj
+__Hfardata 0 0 FARRAM 0 fardata dist/default/debug\TunnelBoard.X.debug.obj
+__Hsmallconst 848 0 SMALLCONST 0 smallconst dist/default/debug\TunnelBoard.X.debug.obj
+__Lifardata 0 0 CODE 0 ifardata dist/default/debug\TunnelBoard.X.debug.obj
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/debug\TunnelBoard.X.debug.obj
+__Hintcode 2 0 CODE 0 intcode dist/default/debug\TunnelBoard.X.debug.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+idloc 0 200000 200000 8 1
+text2 0 848 848 21A 1
+reset_vec 0 0 0 6 1
+smallconst 0 800 800 48 1
+bssCOMRAM 1 1 1 5F 1
+config 0 300000 300000 E 1
